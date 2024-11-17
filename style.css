@@ -121,16 +121,23 @@ html5doctor.com Reset Stylesheet
     }
     .text {
         width: 100%;
-        border: none;
+        border: 2px solid #ccc; /* 枠線のスタイル */
+        border-radius: 4px; /* 角を丸くする */
+        padding: 10px; /* 内側の余白 */
         margin-top: 2rem;
         font-size: 2vw;
         letter-spacing: 0.1em;
         text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影をつける */
     }
+    
     .text:focus, .text:focus-visible {
-        border: none;
+        border: 2px solid #91dbf1; /* フォーカス時の枠線色 */
         outline: none;
+        box-shadow: 0 0 8px rgba(145, 219, 241, 0.8); /* フォーカス時の強調 */
+        background-color: #f9f9f9; /* フォーカス時の背景色を薄い色に変更 */
     }
+    
     .message {
         display: block;
         margin-top: 2rem;
